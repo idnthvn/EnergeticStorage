@@ -141,7 +141,7 @@ public class Utils {
             ownerNBT = blockNBT.getCompound("Owner");
         }
 
-        return ownerNBT.getCompound("Properties").getCompoundList("textures").get(0).getString("Value").equals(Skulls.Computer.getTexture());
+        return ownerNBT.getCompound("Properties").getCompoundList("textures").getString("Value").equals(Skulls.Computer.getTexture());
     }
 
     public static boolean isItemADrive(ItemStack item) {
